@@ -82,7 +82,7 @@ end
 % Define all SI/generation time distributions
 distNam = {'covid', 'ebola'};
 distChoice = distNam{distNo}; disp(['True SI scenario: ' distChoice]);
-% Set serial interval parameters
+% Set serial interval type to gamma distribution
 distvals.type = 2; 
 
 % Hyerparameters of serial distribution
