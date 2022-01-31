@@ -29,6 +29,7 @@ pstate = zeros(nPts, nPts);
 for j = 1:nPts
     pstate(j, :) = normpdf(Rgrid(j), Rgrid, sqrt(Rgrid)*eta);
 end
+pstate = pstate';
 
 % Update prior to posterior sequentially
 for i = 2:nday
