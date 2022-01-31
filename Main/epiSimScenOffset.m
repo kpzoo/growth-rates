@@ -83,7 +83,7 @@ end
 distNam = {'covid', 'ebola'};
 distChoice = distNam{distNo}; disp(['True SI scenario: ' distChoice]);
 % Set serial interval parameters
-distvals.type = distNo; 
+distvals.type = 2; 
 
 % Hyerparameters of serial distribution
 switch(distNo)
