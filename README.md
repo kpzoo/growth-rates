@@ -8,3 +8,6 @@ These analyses reproduce the Figures from: Parag KV, Thompson RN, Donnelly CA. A
 for the paper, which will appear as part of a JRSSA special issue. A talk on this work is https://www.youtube.com/watch?v=GTKu4fjA0Fc&ab_channel=RoyalStatSoc.
 
 The Matlab code consists of growthSim.m, which computes the comparisons of growth rate estimates under a known serial interval distribution, and growthSimErr.m, which examines how estimates of R_t and r_t are differently sensitive to misspecification of that distribution.
+
+
+Usage: use setScenario.m in the Main folder to define the simulation parameters for generated epidemic trajectories. Currently the settings are tailored for Ebola virus disease dynamics (distNo = 2 in growthSim.m). For COVID-19 dynamics (distNo = 1) it may be necessary to reduce the true R values or change-times in setScenario.m to prevent very large incidence curves (which take longer to process if one-step-ahead predictions are required from allFilSmoothGrow.m in Main).
